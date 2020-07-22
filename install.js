@@ -296,7 +296,7 @@ module.exports = function(formio, items, done) {
         return done();
       }
 
-      extract('client.zip', 'formio-app-formio-master', 'client', done);
+      extract('client.zip', 'formio-app-formio-4.x', 'client', done);
     },
 
     /**
