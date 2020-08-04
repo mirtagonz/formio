@@ -278,7 +278,7 @@ module.exports = function(formio, items, done) {
 
       // Download the client.
       download(
-        'https://codeload.github.com/mirtagonz/formio-app-formio/zip/4.x',
+        'https://codeload.github.com/sodep/formio-app-formio/zip/4.x',
         'client.zip',
         'client',
         done
