@@ -24,6 +24,11 @@ module.exports = function(formio, items, done) {
   let application = '';
   let templateFile = '';
 
+  // Client download configuration
+  const clientRepository = 'https://codeload.github.com/sodep';
+  const clientAppName = 'formio-app-formio';
+  const clientBranch = '4.x';
+
   /**
    * Download a zip file.
    *
@@ -278,7 +283,7 @@ module.exports = function(formio, items, done) {
 
       // Download the client.
       download(
-        'https://codeload.github.com/sodep/formio-app-formio/zip/4.x',
+        `${clientRepository}/${clientAppName}/zip/${clientBranch}`,
         'client.zip',
         'client',
         done
@@ -296,7 +301,7 @@ module.exports = function(formio, items, done) {
         return done();
       }
 
-      extract('client.zip', 'formio-app-formio-4.x', 'client', done);
+      extract('client.zip', `${clientAppName}-${clientBranch}`, 'client', done);
     },
 
     /**
