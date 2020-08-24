@@ -296,6 +296,9 @@ module.exports = function(config) {
         // Add the template functions.
         router.formio.template = require('./src/templates/index')(router);
 
+        // Add the import functions
+        router.formio.import = require('./src/import/index')(router);
+
         const swagger = require('./src/util/swagger');
         // Show the swagger for the whole site.
         router.get('/spec.json', function(req, res, next) {
