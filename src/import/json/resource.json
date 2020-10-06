@@ -79,31 +79,51 @@
   }],
   "type":"resource",
   "tags":[],
-  "submissionAccess":[
+  "submissionAccess": [
     {
-      "type":"create_own",
-      "roles":[]
+      "type": "create_all",
+      "roles": ["administrator"]
     },
     {
-      "type":"read_own",
-      "roles":[]
+      "type": "read_all",
+      "roles": ["administrator"]
     },
     {
-      "type":"update_own",
-      "roles":[]
+      "type": "update_all",
+      "roles": ["administrator"]
     },
     {
-      "type":"delete_own",
-      "roles":[]
+      "type": "delete_all",
+      "roles": ["administrator"]
+    },
+    {
+      "type": "create_own",
+      "roles": []
+    },
+    {
+      "type": "read_own",
+      "roles": []
+    },
+    {
+      "type": "update_own",
+      "roles": []
+    },
+    {
+      "type": "delete_own",
+      "roles": []
+    }
+  ],
+  "access": [
+    {
+      "type": "read_all",
+      "roles": [
+        "anonymous",
+        "authenticated",
+        "administrator"
+      ]
     }
   ],
   "title":"",
   "name":"",
-  "path":"",
-  "access": [
-    {
-      "type":"read_all",
-      "roles":[]
-    }
-  ]
+  "path":""
 }
